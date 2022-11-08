@@ -19,19 +19,20 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill className='cursor-pointer text-2xl'/>
               </li>
-              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a></li>
+              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-400 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a></li>
             </ul>
           </nav>
-          <div>
-            <h2>Anthony Denis</h2>
-            <h3>Developer and designer.</h3>
-            <p>Freelancer provinding services for programming and design content needs. Join me down below and let's get cracking !</p>
+          <div className='text-center p-10'>
+            <h2 className='text-5xl py-2 text-teal-200 font-medium'>Anthony Denis</h2>
+            <h3 className='text-2xl py-2'>Developer and designer.</h3>
+            <p className='text-md py-5 leading-8 text-gray-800'>Freelancer provinding services for programming and design content needs. Join me down below and let's get cracking !</p>
           </div>
-          <div>
+          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-800'>
           <AiFillTwitterCircle />
           <AiFillLinkedin />
           <AiFillGithub />
           </div>
+
         </section>
       </main>
     </div>
