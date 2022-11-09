@@ -3,6 +3,10 @@ import {BsFillMoonStarsFill} from 'react-icons/bs';
 import{AiFillTwitterCircle,AiFillLinkedin,AiFillGithub,} from "react-icons/ai";
 import Image from 'next/image';
 import deved from "../public/home-main.svg";
+import design from "../public/design.png";
+import code from "../public/code.png";
+import consulting from "../public/consulting.png";
+
 
 export default function Home() {
   return (
@@ -13,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-purple-700 px-10 '>
+      <main className='bg-purple-700 px-10 md:px-20 lg:px-40'>
         <section className=" bg-purple-700 min-h-screen">
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons'> Developed by Anthxny </h1>
@@ -25,7 +29,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-200 font-medium'>Anthony Denis</h2>
+            <h2 className='text-5xl py-2 text-teal-200 font-medium md:text-6xl'>Anthony Denis</h2>
             <h3 className='text-2xl py-2'>Developer and designer.</h3>
             <p className='text-md py-5 leading-8 text-gray-800'>Freelancer provinding services for programming and design content needs. Join me down below and let's get cracking !</p>
           </div>
@@ -36,6 +40,68 @@ export default function Home() {
           </div>
           <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
           <Image src={deved} layout="fill" objectFit='cover'/>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>Services I offer</h3>
+            <p className='text-md py-2 leading-8 text-teal-200'>
+              Since the beginning of my journey as a freel developer ,
+              I've done remote work for
+              <span className='text-teal-500'> agencies </span>consulted for
+              <span className='text-teal-500'> startups </span>and collaborated with talanted people to create digital contents for both business and consumer use.
+            </p>
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              I offer from a wide range of services , including brand design , programming and teaching.
+            </p>
+          </div>
+          <div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image src={design} width={100} height={100} />
+              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
+              <p className='py-2'>
+                Creating elegent designs suited for your needs 
+                following core design theory.
+              </p>
+              <h4 className='py-4 text-teal-200'>Design tools I use</h4>
+              <p className='text-gray-800 py-1'>Photoshop</p>
+              <p className='text-gray-800 py-1'>Figma</p>
+              <p className='text-gray-800 py-1'>illustrator</p>
+            </div>
+
+
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image src={code} width={100} height={100} />
+              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
+              <p className='py-2'>
+                Creating elegent designs suited for your needs 
+                following core design theory.
+              </p>
+              <h4 className='py-4 text-teal-200'>Design tools I use</h4>
+              <p className='text-gray-800 py-1'>Photoshop</p>
+              <p className='text-gray-800 py-1'>Figma</p>
+              <p className='text-gray-800 py-1'>illustrator</p>
+            </div>
+
+
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image src={consulting} width={100} height={100} />
+              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
+              <p className='py-2'>
+                Creating elegent designs suited for your needs 
+                following core design theory.
+              </p>
+              <h4 className='py-4 text-teal-200'>Design tools I use</h4>
+              <p className='text-gray-800 py-1'>Photoshop</p>
+              <p className='text-gray-800 py-1'>Figma</p>
+              <p className='text-gray-800 py-1'>illustrator</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>Portfolio</h3>
           </div>
         </section>
       </main>
