@@ -26,8 +26,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-purple-700 px-10 md:px-20 lg:px-40 dark:bg-purple-800'>
-        <section className=" bg-purple-700 min-h-screen dark:bg-purple-800">
+      <main className='bg-purpleverylight px-10 md:px-20 lg:px-40 dark:bg-purpleverydark'>
+        <section className=" bg-purpleverylight min-h-screen dark:bg-purpleverydark">
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons'> Developed by Anthxny </h1>
             <ul className='flex items-center'>
@@ -35,88 +35,88 @@ export default function Home() {
                 <BsFillMoonStarsFill  onClick={() => setDarkMode(!darkMode)} 
                 className='cursor-pointer text-2xl'/>
               </li>
-              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-400 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a></li>
+              <li><a className='bg-gradient-to-t from-Blue to-purplelight hover:from-Blue hover:to-purpleverydark text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a></li>
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-200 font-medium md:text-6xl'>Anthony Denis</h2>
+            <h2 className='text-5xl py-2 text-surligner dark:text-purpleverylight font-medium md:text-6xl'>Anthony Denis</h2>
             <h3 className='text-2xl py-2 md:text-3xl'>Developer and designer.</h3>
-            <p className='text-md py-5 md:text-xl max-w-xl mx-auto leading-8 text-gray-800'>Freelancer provinding services for programming and design content needs. Join me down below and let's get cracking !</p>
+            <p className='text-md py-5 md:text-xl max-w-xl mx-auto leading-8 text-Gris dark:text-purpleverylight'>Freelancer provinding services for programming and design content needs. Join me down below and let's get cracking !</p>
           </div>
-          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-800'>
+          <div className='text-5xl flex justify-center gap-16 py-3 text-Gris dark:text-purpleverylight'>
           <AiFillTwitterCircle />
           <AiFillLinkedin />
           <AiFillGithub />
           </div>
-          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
+          <div className='relative mx-auto bg-gradient-to-b from-beige to-purplelight  rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
           <Image className='m-auto' src={deved} layout="fill" objectFit='cover'/>
           </div>
         </section>
 
-        <section> // Systeme de cartes
+        <section>
           <div>
-            <h3 className='text-3xl py-1'>Services I offer</h3>
-            <p className='text-md py-2 leading-8 text-teal-200'>
+            <h3 className='text-3xl py-1 pt-20 pb-10'>Services I offer</h3>
+            <p className='text-md py-2 leading-8 text-teal-200 md:text-xl'>
               Since the beginning of my journey as a freel developer ,
               I've done remote work for
-              <span className='text-teal-500'> agencies </span>consulted for
-              <span className='text-teal-500'> startups </span>and collaborated with talanted people to create digital contents for both business and consumer use.
+              <span className='text-bleubasic'> agencies </span>consulted for
+              <span className='text-bleubasic'> startups </span>and collaborated with talanted people to create digital contents for both business and consumer use.
             </p>
-            <p className='text-md py-2 leading-8 text-gray-800'>
+            <p className='text-md py-2 leading-8 text-Gris'>
               I offer from a wide range of services , including brand design , programming and teaching.
             </p>
           </div>
           <div className='lg:flex gap-10'>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+            <div className='text-center shadow-xl p-10 rounded-xl my-10 bg-beige dark:bg-bleuclair'>
               <Image className='m-auto' src={design} width={100} height={100} />
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
               <p className='py-2'>
                 Creating elegent designs suited for your needs 
                 following core design theory.
               </p>
-              <h4 className='py-4 text-teal-200'>Design tools I use</h4>
-              <p className='text-gray-800 py-1'>Photoshop</p>
-              <p className='text-gray-800 py-1'>Figma</p>
-              <p className='text-gray-800 py-1'>illustrator</p>
+              <h4 className='py-4 text-teal200'>Design tools I use</h4>
+              <p className='text-Gris py-1'>Photoshop</p>
+              <p className='text-Gris py-1'>Figma</p>
+              <p className='text-Gris py-1'>illustrator</p>
             </div>
 
 
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 bg-beige dark:bg-bleuclair'>
               <Image className='m-auto' src={code} width={100} height={100}  />
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
               <p className='py-2'>
                 Creating elegent designs suited for your needs 
                 following core design theory.
               </p>
-              <h4 className='py-4 text-teal-200'>Design tools I use</h4>
-              <p className='text-gray-800 py-1'>Photoshop</p>
-              <p className='text-gray-800 py-1'>Figma</p>
-              <p className='text-gray-800 py-1'>illustrator</p>
+              <h4 className='py-4 text-teal200'>Design tools I use</h4>
+              <p className='text-Gris py-1'>Photoshop</p>
+              <p className='text-Gris py-1'>Figma</p>
+              <p className='text-Gris py-1'>illustrator</p>
             </div>
 
 
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 bg-beige dark:bg-bleuclair'>
               <Image className='m-auto' src={consulting} width={100} height={100} />
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
               <p className='py-2'>
                 Creating elegent designs suited for your needs 
                 following core design theory.
               </p>
-              <h4 className='py-4 text-teal-200'>Design tools I use</h4>
-              <p className='text-gray-800 py-1'>Photoshop</p>
-              <p className='text-gray-800 py-1'>Figma</p>
-              <p className='text-gray-800 py-1'>illustrator</p>
+              <h4 className='py-4 text-teal200'>Design tools I use</h4>
+              <p className='text-Gris py-1'>Photoshop</p>
+              <p className='text-Gris py-1'>Figma</p>
+              <p className='text-Gris py-1'>illustrator</p>
             </div>
           </div>
         </section>
         <section>
           <div>
             <h3 className='text-3xl py-1'>Portfolio</h3>
-            <p className='text-md py-2 leading-8 text-teal-200'>
+            <p className='text-md py-2 leading-8 text-teal200'>
               Since the beginning of my journey as a freel developer ,
               I've done remote work for
-              <span className='text-teal-500'> agencies </span>consulted for
-              <span className='text-teal-500'> startups </span>and collaborated with talanted people to create digital contents for both business and consumer use.
+              <span className='text-bleubasic'> agencies </span>consulted for
+              <span className='text-bleubasic'> startups </span>and collaborated with talanted people to create digital contents for both business and consumer use.
             </p>
             <p className='text-md py-2 leading-8 text-gray-800'>
               I offer from a wide range of services , including brand design , programming and teaching.
